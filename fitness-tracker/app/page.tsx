@@ -1,12 +1,22 @@
-import Image from 'next/image'
+
+async function fetchData() {
+  await new Promise ((resolve)=> setTimeout
+  (resolve, 3000));
+  
+  return [1, 2, 3];
+}
 
 
 
+export default async function Home() {
+  const data = await fetchData();
 
 
+  console.log(data);
 
-export default function Home() {
   return (
-        <div></div>
-  )
+        <main>
+          <h1>Landing Page</h1>
+        </main>
+  );
 }
