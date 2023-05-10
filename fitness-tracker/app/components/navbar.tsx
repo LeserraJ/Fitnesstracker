@@ -10,7 +10,8 @@ export default function Navbar(){
         <Image
             src="/logo.svg"
             alt="Fitness Tracker Logo"
-            width={50}
+            className="px-3"
+            width={75}
             height={50}
             priority>
         </Image>
